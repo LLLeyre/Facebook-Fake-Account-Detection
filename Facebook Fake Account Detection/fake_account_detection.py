@@ -6,7 +6,6 @@ from sklearn.model_selection import train_test_split
 from sklearn.metrics import classification_report
 import copy
 
-# Hàm chạy thuật toán SybilWalk
 def SybilWalk(neighbors_list,benigns,sybils,eps=1e-3,T=200,proba_init = None):
     neighbors_list = copy.deepcopy(neighbors_list)
     # Chuẩn hóa để cho trọng số cạnh lớn nhất bằng 1
